@@ -1,0 +1,89 @@
+export const meta = {
+  publishDate: '2018-05-12T12:00:00Z',
+  title: "Landing Page with Component",
+}
+
+import Component from '~/landingPages/landingPageWithComponent/Component';
+import Container from '~/components/Container';
+import {Radar} from 'react-chartjs-2';
+
+<Container>
+
+# Landing Page with React Component
+
+Lucas ipsum dolor sit amet chewbacca mon darth windu kenobi mandalore wedge skywalker padmé mace. Palpatine organa boba windu amidala c-3p0 lobot. Darth chewbacca kessel han lando darth. Jawa luke mustafar mace. Jango kenobi biggs calamari skywalker greedo antilles. Yoda endor sith wedge mustafar. Skywalker hutt ben kenobi. Endor antilles boba kessel. Lars palpatine darth yavin cade. Antilles leia jade jawa mandalore moff. Luke lars jabba thrawn dantooine antilles ben skywalker hutt. Jar palpatine moff skywalker jango skywalker.
+
+<Component/>
+
+```js
+const a = 'asdasd';
+```
+
+
+```csharp
+/// <summary>
+/// Processes a credit against a credit card or token, using a predefined amount.
+///   From <a href="https://help.usaepay.info/api/rest/?shell#credit-debit-open-refund">this</a> USA-ePay API link.
+/// </summary>
+/// <param name="_connection">USA ePay service connection instance</param>
+/// <param name="amount">Amount to refund</param>
+/// <param name="cardHolderName">Cardholder name</param>
+/// <param name="creditCardNumber">Credit card number or token</param>
+/// <param name="expirationDate">Credit card expiration date. All numbers, and needs to be formatted as MMYY.</param>
+/// <param name="receiptTemplateCustomerEmail">The name of the receipt template that should be used when sending a customer receipt.</param>
+/// <param name="receiptTemplateMerchantEmail">The name of the receipt template that should be used when sending a merchant receipt.</param>
+/// <param name="software">Software name and version (useful for troubleshooting)</param>
+public static async Task<ProviderResponse<TransactionsResponse>> CreditCardCredit(IUSAePayConnection _connection,
+    decimal amount, string cardHolderName, string creditCardNumber, string expirationDate, string receiptTemplateCustomerEmail,
+    string receiptTemplateMerchantEmail, string software)
+{
+    var transactionsBody = new TransactionsRequest
+    {
+        Amount = amount,
+        Command = "cc:credit",
+        CreditCard = new TransactionsCreditCard
+        {
+            CardHolder = cardHolderName,
+            Number = creditCardNumber,
+            Expiration = expirationDate,
+        },
+        ReceiptTemplateCustomerEmail = receiptTemplateCustomerEmail,
+        ReceiptTemplateMerchantEmail = receiptTemplateMerchantEmail,
+        Software = software
+    };
+    var resp = await _connection.PostTransactions(transactionsBody);
+    return resp;
+}
+```
+
+<Radar data={
+{
+  labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  datasets: [
+    {
+      label: 'My First dataset',
+      backgroundColor: 'rgba(179,181,198,0.2)',
+      borderColor: 'rgba(179,181,198,1)',
+      pointBackgroundColor: 'rgba(179,181,198,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(179,181,198,1)',
+      data: [65, 59, 90, 81, 56, 55, 40]
+    },
+    {
+      label: 'My Second dataset',
+      backgroundColor: 'rgba(255,99,132,0.2)',
+      borderColor: 'rgba(255,99,132,1)',
+      pointBackgroundColor: 'rgba(255,99,132,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(255,99,132,1)',
+      data: [28, 48, 40, 19, 96, 27, 100]
+    }
+  ]
+}
+}/>
+
+
+Kenobi bespin lars calrissian luke moff tatooine bothan solo. Padmé hutt dooku moff. Palpatine skywalker naboo jango. Organa amidala calamari fett darth. Dooku hutt gonk kamino. Skywalker moff antilles mandalore organa mace wampa hoth. Biggs padmé kenobi zabrak yoda. Kessel solo padmé naboo k-3po padmé. Mandalorians gonk palpatine binks hutt moff. Amidala jabba palpatine antilles. Binks hutt maul hutt coruscant chewbacca. Baba cade ackbar darth sebulba tusken raider jango amidala. Owen chewbacca solo qui-gonn.
+</Container>

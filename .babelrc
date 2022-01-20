@@ -1,0 +1,11 @@
+{
+  "presets": [
+    "next/babel"
+  ],
+  "plugins": [
+    ["emotion", { "inline": true }],
+    "preval",
+    "root-import",
+    "@babel/plugin-proposal-export-default-from"
+  ]
+}
